@@ -6,10 +6,11 @@ import 'sample_feature/sample_item_details_view.dart';
 import 'sample_feature/sample_item_list_view.dart';
 import 'settings/settings_controller.dart';
 import 'settings/settings_view.dart';
+import 'home_screen/home_screen_view.dart';
 
 /// The Widget that configures your application.
-class PeriodicTable extends StatelessWidget {
-  const PeriodicTable({
+class PeriodicTableApp extends StatelessWidget {
+  const PeriodicTableApp({
     super.key,
     required this.settingsController,
   });
@@ -31,6 +32,10 @@ class PeriodicTable extends StatelessWidget {
           // returns to the app after it has been killed while running in the
           // background.
           restorationScopeId: 'app',
+          
+          //home: const HomePageView(),
+          //routes: ,
+          title: "Tabela Periódica",
 
           // Provide the generated AppLocalizations to the MaterialApp. This
           // allows descendant Widgets to display the correct translations
@@ -73,7 +78,7 @@ class PeriodicTable extends StatelessWidget {
                     return const SampleItemDetailsView();
                   case SampleItemListView.routeName:
                   default:
-                    return const SampleItemListView();
+                    return const HomeScreenView();
                 }
               },
             );
