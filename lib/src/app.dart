@@ -2,13 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
-import 'sample_feature/sample_item_details_view.dart';
-import 'sample_feature/sample_item_list_view.dart';
-import 'settings/settings_controller.dart';
-import 'settings/settings_view.dart';
-import 'home_screen/home_screen_view.dart';
+import 'constants/theme.dart';
+import 'controllers/settings.dart';
+import 'screens/element_details.dart';
+import 'screens/home.dart';
+import 'screens/settings.dart';
 
-/// The Widget that configures your application.
 class PeriodicTableApp extends StatelessWidget {
   const PeriodicTableApp({
     super.key,
@@ -32,7 +31,7 @@ class PeriodicTableApp extends StatelessWidget {
           // returns to the app after it has been killed while running in the
           // background.
           restorationScopeId: 'app',
-          
+
           //home: const HomePageView(),
           //routes: ,
           title: "Tabela Periódica",
@@ -61,27 +60,41 @@ class PeriodicTableApp extends StatelessWidget {
           // Define a light and dark color theme. Then, read the user's
           // preferred ThemeMode (light, dark, or system default) from the
           // SettingsController to display the correct theme.
-          theme: ThemeData(),
-          darkTheme: ThemeData.dark(),
+          theme: lightTheme,
+          darkTheme: darkTheme,
           themeMode: settingsController.themeMode,
-
-          // Define a function to handle named routes in order to support
-          // Flutter web url navigation and deep linking.
           onGenerateRoute: (RouteSettings routeSettings) {
-            return MaterialPageRoute<void>(
-              settings: routeSettings,
-              builder: (BuildContext context) {
-                switch (routeSettings.name) {
-                  case SettingsView.routeName:
-                    return SettingsView(controller: settingsController);
-                  case SampleItemDetailsView.routeName:
-                    return const SampleItemDetailsView();
-                  case SampleItemListView.routeName:
-                  default:
-                    return const HomeScreenView();
-                }
-              },
-            );
+            return PageRouteBuilder<void>(
+                settings: routeSettings,
+                pageBuilder: (BuildContext context, Animation<double> animation,
+                    Animation<double> secondaryAnimation) {
+                  switch (routeSettings.name) {
+                    case SettingsScreen.routeName:
+                      return SettingsScreen(controller: settingsController);
+                    case ElementDetailsScreen.routeName:
+                      return ElementDetailsScreen(
+                          name: routeSettings.arguments as String);
+                    case HomeScreen.routeName:
+                    default:
+                      return const HomeScreen();
+                  }
+                },
+                transitionDuration: const Duration(seconds: 1),
+                transitionsBuilder:
+                    (context, animation, secondaryAnimation, child) {
+                  const begin = Offset(1.0, 0.0);
+                  const end = Offset.zero;
+                  const curve = Curves.ease;
+
+                  var tween = Tween(begin: begin, end: end)
+                      .chain(CurveTween(curve: curve));
+                  var offsetAnimation = animation.drive(tween);
+
+                  return SlideTransition(
+                    position: offsetAnimation,
+                    child: child,
+                  );
+                });
           },
         );
       },
