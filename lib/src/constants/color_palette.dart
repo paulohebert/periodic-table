@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'element_category.dart';
+import '../models/element_category.dart';
 
 const Map<ElementCategory, Color> colors = {
   ElementCategory.metal: Color.fromRGBO(75, 209, 104, 1),
