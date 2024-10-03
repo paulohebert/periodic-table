@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_layout_grid/flutter_layout_grid.dart';
-import 'package:periodic_table/src/constants/element%20list.dart';
-import 'package:periodic_table/src/widgets/element_cell_list.dart';
-
+import '../constants/element_list.dart';
+import '../widgets/element_cell_list.dart';
 import '../models/element.dart';
 import 'element_cell.dart';
 

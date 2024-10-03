@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:periodic_table/src/widgets/element_cell.dart';
-import 'package:periodic_table/src/widgets/element_cell_list.dart';
-
+import '../widgets/element_cell.dart';
+import '../widgets/element_cell_list.dart';
 import '../models/element.dart';
 import '../models/element_category.dart';
 
