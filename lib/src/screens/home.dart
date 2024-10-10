@@ -101,7 +101,7 @@ class HomeScreen extends StatelessWidget {
                       ),
                       const SizedBox(height: 16.0),
                       ElevatedButton(
-                        child: const Text('Close BottomSheet'),
+                        child: const Text('X'),
                         onPressed: () => Navigator.pop(context),
                       ),
                     ],
