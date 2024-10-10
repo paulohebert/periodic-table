@@ -67,7 +67,7 @@ class HomeScreen extends StatelessWidget {
                           Container(
                             width: 20.0,
                             height: 20.0,
-                            color: Color(0xFF4BD169),
+                            color: Color(0xFF4BD169), 
                           ),
                           const SizedBox(width: 8.0),
                           const Text('Metais'),
@@ -80,7 +80,7 @@ class HomeScreen extends StatelessWidget {
                           Container(
                             width: 20.0,
                             height: 20.0,
-                            color: Color(0xFFF0B214),
+                            color: Color(0xFFF0B214), 
                           ),
                           const SizedBox(width: 8.0),
                           const Text('Semimetais'),
@@ -101,16 +101,7 @@ class HomeScreen extends StatelessWidget {
                       ),
                       const SizedBox(height: 16.0),
                       ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                          primary: Colors.transparent, 
-                          shadowColor: Colors.transparent,
-                        ),
-                        child: const Text(
-                          'Fechar',
-                          style: TextStyle(
-                            color: Color(0xFFFF6F61), 
-                          ),
-                        ),
+                        child: const Text('X'),
                         onPressed: () => Navigator.pop(context),
                       ),
                     ],
