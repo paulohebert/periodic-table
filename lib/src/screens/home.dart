@@ -101,7 +101,12 @@ class HomeScreen extends StatelessWidget {
                       ),
                       const SizedBox(height: 16.0),
                       ElevatedButton(
-                        child: const Text('X'),
+                        child: const Text(
+                          'X',
+                          style: TextStyle(
+                            color: Color(0xFFFF6F61),
+                          ),
+                        ),
                         onPressed: () => Navigator.pop(context),
                       ),
                     ],
