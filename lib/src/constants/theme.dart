@@ -3,31 +3,31 @@ import 'package:flutter/material.dart';
 ThemeData lightTheme = ThemeData.light().copyWith(
     appBarTheme: const AppBarTheme(
         surfaceTintColor: Colors.transparent,
-        backgroundColor: Colors.white,
-        elevation: 4,
+        backgroundColor: Color(0xFFFAFAFA),
+        elevation: 2,
         titleTextStyle: TextStyle(fontSize: 20, color: Colors.black),
         shadowColor: Colors.black),
     floatingActionButtonTheme:
         const FloatingActionButtonThemeData(backgroundColor: Colors.white),
     bottomAppBarTheme: const BottomAppBarTheme(
-      color: Colors.white,
+      color: Color(0xFFFAFAFA),
       shadowColor: Colors.black,
       surfaceTintColor: Colors.white,
     ),
-    scaffoldBackgroundColor: Colors.white);
+    scaffoldBackgroundColor: const Color(0xFFF5F5F5));
 
 ThemeData darkTheme = ThemeData.dark().copyWith(
-    appBarTheme: AppBarTheme(
+    appBarTheme: const AppBarTheme(
         surfaceTintColor: Colors.transparent,
-        backgroundColor: Colors.grey[900],
+        backgroundColor: Color(0xFF212121),
         elevation: 2,
-        titleTextStyle: const TextStyle(fontSize: 20, color: Colors.white),
+        titleTextStyle: TextStyle(fontSize: 20, color: Colors.white),
         shadowColor: Colors.white38),
-    floatingActionButtonTheme: FloatingActionButtonThemeData(
-        backgroundColor: Colors.grey[900], foregroundColor: Colors.white),
-    bottomAppBarTheme: BottomAppBarTheme(
-      color: Colors.grey[900],
+    floatingActionButtonTheme: const FloatingActionButtonThemeData(
+        backgroundColor: Color(0xFF212121), foregroundColor: Colors.white),
+    bottomAppBarTheme: const BottomAppBarTheme(
+      color: Color(0xFF212121),
       shadowColor: Colors.white,
       surfaceTintColor: Colors.black,
     ),
-    scaffoldBackgroundColor: Colors.grey[900]);
+    scaffoldBackgroundColor: const Color(0xFF212121));
