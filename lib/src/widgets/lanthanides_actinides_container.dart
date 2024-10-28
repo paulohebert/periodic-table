@@ -46,7 +46,10 @@ class _LanthanidesActinidesContainerState
       child: Row(
         children: [
           Cell(
-            color: const Color.fromARGB(255, 58, 143, 76),
+            colors: const [
+              Color.fromARGB(255, 36, 160, 29),
+              Color.fromARGB(255, 58, 151, 78)
+            ],
             onTap: () {
               setState(() {
                 _active = !_active;
