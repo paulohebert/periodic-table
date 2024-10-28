@@ -5,31 +5,35 @@ import 'lanthanides_actinides_container.dart';
 import 'element_cell.dart';
 import '../constants/elements.dart';
 
-class PeriodicTableWidget extends StatelessWidget {
-  const PeriodicTableWidget({super.key});
+class PeriodicTable extends StatefulWidget {
+  const PeriodicTable({super.key});
+
+  @override
+  State<PeriodicTable> createState() => _PeriodicTableState();
+}
+
+class _PeriodicTableState extends State<PeriodicTable> {
+  final ScrollController _scrollController = ScrollController();
 
   @override
   Widget build(BuildContext context) {
-    return InteractiveViewer(
+    return Scrollbar(
+        interactive: true,
+        scrollbarOrientation: ScrollbarOrientation.bottom,
+        controller: _scrollController,
         child: SingleChildScrollView(
-      scrollDirection: Axis.horizontal,
-      child: LayoutGrid(
-        columnSizes: repeat(18, [auto]),
-        rowSizes: [
-          40.px,
-          ...repeat(7, [1.fr])
-        ],
-        children: [
-          ..._buildGroups(),
-          ..._buildElements(),
-          const GridPlacement(
-              rowStart: 6,
-              rowSpan: 2,
-              columnStart: 2,
-              child: LanthanidesActinidesContainer())
-        ],
-      ),
-    ));
+          restorationId: "periodic-table",
+          scrollDirection: Axis.horizontal,
+          controller: _scrollController,
+          child: LayoutGrid(
+            columnSizes: repeat(18, [auto]),
+            rowSizes: [
+              40.px,
+              ...repeat(7, [1.fr])
+            ],
+            children: [..._buildGroups(), ..._buildElements()],
+          ),
+        ));
   }
 
   List<Widget> _buildGroups() {
@@ -44,12 +48,17 @@ class PeriodicTableWidget extends StatelessWidget {
   }
 
   List<Widget> _buildElements() {
-    return chemicalElements
-        .map((element) => GridPlacement(
-              rowStart: element.period,
-              columnStart: element.group - 1,
-              child: ElementCell(element: element),
-            ))
-        .toList();
+    return List<Widget>.from([
+      ...chemicalElements.map((element) => GridPlacement(
+            rowStart: element.period,
+            columnStart: element.group - 1,
+            child: ElementCell(element: element),
+          )),
+      const GridPlacement(
+          rowStart: 6,
+          rowSpan: 2,
+          columnStart: 2,
+          child: LanthanidesActinidesContainer())
+    ]);
   }
 }
