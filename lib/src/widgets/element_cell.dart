@@ -13,41 +13,53 @@ class ElementCell extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Cell(
-        color: colors[element.category] ?? Colors.transparent,
+        colors: colors[element.category] ?? [],
         onTap: () {
           Navigator.restorablePushNamed(context, ElementDetailsScreen.routeName,
               arguments: element.name);
         },
         child: Padding(
-            padding: const EdgeInsets.all(7),
+            padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 10),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
-                  "${element.atomicNumber}",
-                  textWidthBasis: TextWidthBasis.parent,
-                  style: const TextStyle(color: Colors.white),
-                ),
                 Expanded(
-                    child: Container(
+                    child: FittedBox(
+                        fit: BoxFit.scaleDown,
+                        alignment: Alignment.centerLeft,
+                        child: Text(
+                          "${element.atomicNumber}",
+                          style: const TextStyle(color: Colors.white),
+                        ))),
+                Expanded(
+                    flex: 2,
+                    child: FittedBox(
+                        fit: BoxFit.scaleDown,
                         alignment: Alignment.centerLeft,
                         child: Text(
                           element.symbol,
-                          textScaler: const TextScaler.linear(2),
+                          textScaler: const TextScaler.linear(3),
                           style: const TextStyle(color: Colors.white),
                         ))),
-                Hero(
-                    flightShuttleBuilder: (flightContext, animation,
-                        flightDirection, fromHeroContext, toHeroContext) {
-                      return Material(
-                          color: Colors.transparent,
-                          child: Center(child: Text(element.name)));
-                    },
-                    tag: element.name,
-                    child: Text(
-                      element.name,
-                      style: const TextStyle(color: Colors.white),
-                    ))
+                Expanded(
+                    child: FittedBox(
+                        fit: BoxFit.scaleDown,
+                        alignment: Alignment.centerLeft,
+                        child: Hero(
+                            flightShuttleBuilder: (flightContext,
+                                animation,
+                                flightDirection,
+                                fromHeroContext,
+                                toHeroContext) {
+                              return Material(
+                                  color: Colors.transparent,
+                                  child: Center(child: Text(element.name)));
+                            },
+                            tag: element.name,
+                            child: Text(
+                              element.name,
+                              style: const TextStyle(color: Colors.white),
+                            ))))
               ],
             )));
   }
