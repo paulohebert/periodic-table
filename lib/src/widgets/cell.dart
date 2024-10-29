@@ -17,7 +17,7 @@ class Cell extends StatelessWidget {
   Widget build(BuildContext context) {
     return AnimatedContainer(
       width: max(MediaQuery.sizeOf(context).width / 18, 85),
-      duration: const Duration(seconds: 2),
+      duration: const Duration(seconds: 1),
       curve: Curves.easeIn,
       child: Material(
         color: Colors.transparent,

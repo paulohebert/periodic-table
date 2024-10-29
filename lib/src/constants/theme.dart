@@ -14,7 +14,7 @@ ThemeData lightTheme = ThemeData.light().copyWith(
       shadowColor: Colors.black,
       surfaceTintColor: Colors.white,
     ),
-    indicatorColor: Colors.black,
+    progressIndicatorTheme: const ProgressIndicatorThemeData(color: Colors.black),
     scrollbarTheme: const ScrollbarThemeData(
         thumbColor: WidgetStatePropertyAll(Colors.black45),
         trackColor: WidgetStatePropertyAll(Color(0xFFF5F5F5))),
@@ -34,7 +34,7 @@ ThemeData darkTheme = ThemeData.dark().copyWith(
       shadowColor: Colors.white,
       surfaceTintColor: Colors.black,
     ),
-    indicatorColor: Colors.white,
+    progressIndicatorTheme: const ProgressIndicatorThemeData(color: Colors.white),
     scrollbarTheme: const ScrollbarThemeData(
       thumbColor: WidgetStatePropertyAll(Color(0xFFEEEEEE)),
       trackColor: WidgetStatePropertyAll(Color(0xFF212121)),

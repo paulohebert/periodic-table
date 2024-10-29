@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:rive/rive.dart' as rive;
 
+import '../widgets/about.dart';
 import '../widgets/periodic_table.dart';
 import 'settings.dart';
 
@@ -18,7 +19,7 @@ class HomeScreen extends StatelessWidget {
         title: Container(
           padding: const EdgeInsets.symmetric(vertical: 10),
           alignment: Alignment.center,
-          height: 80,
+          height: 70,
           child: rive.RiveAnimation.asset(
             "assets/images/logo.riv",
             artboard: isDarkTheme ? "dark" : "light",
@@ -27,7 +28,16 @@ class HomeScreen extends StatelessWidget {
             fit: BoxFit.contain,
           ),
         ),
-        toolbarHeight: 80,
+        toolbarHeight: 70,
+        leading: IconButton(
+          icon: const Icon(Icons.info_outline_rounded),
+          onPressed: () => showDialog(
+            context: context,
+            builder: (BuildContext context) {
+              return const About();
+            },
+          ),
+        ),
         actions: [
           IconButton(
             icon: const Icon(Icons.settings),
@@ -37,10 +47,7 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: SafeArea(
-          child: GestureDetector(
-              onTap: () => FocusScope.of(context).unfocus(),
-              child: const PeriodicTableWidget())),
+      body: const SafeArea(child: PeriodicTable()),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           showModalBottomSheet<void>(
@@ -142,13 +149,13 @@ class HomeScreen extends StatelessWidget {
         },
         tooltip: 'Informações',
         shape: const CircleBorder(),
-        child: const Icon(Icons.info_outline),
+        child: const Icon(Icons.assessment_outlined),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
       bottomNavigationBar: BottomAppBar(
         shape: const CircularNotchedRectangle(),
         elevation: 20,
-        height: 55,
+        height: 50,
         notchMargin: 10,
         child: IconTheme(
           data: IconThemeData(color: Theme.of(context).colorScheme.onPrimary),
