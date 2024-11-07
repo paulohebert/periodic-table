@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../models/element_details.dart';
@@ -62,7 +61,8 @@ class ElementDetailsScreen extends StatelessWidget {
   }
 
   Future<ChemicalElementDetails> _loadElementData() async {
-    final String response = await rootBundle.loadString('assets/json/$symbol.json');
+    final String response =
+        await rootBundle.loadString('assets/json/$symbol.json');
     final Map<String, dynamic> data = json.decode(response);
     return ChemicalElementDetails.fromJson(data);
   }
