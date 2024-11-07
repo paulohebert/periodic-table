@@ -109,7 +109,8 @@ class HomeScreen extends StatelessWidget {
                                     builder: (BuildContext context) {
                                       return AlertDialog(
                                         titlePadding: EdgeInsets.zero,
-                                        contentPadding: const EdgeInsets.all(16.0),
+                                        contentPadding:
+                                            const EdgeInsets.all(16.0),
                                         title: Column(
                                           children: [
                                             Container(
@@ -117,23 +118,28 @@ class HomeScreen extends StatelessWidget {
                                               height: 150,
                                               decoration: const BoxDecoration(
                                                 image: DecorationImage(
-                                                  image: NetworkImage('https://docs.flutter.dev/assets/images/dash/dash-fainting.gif'),
+                                                  image: NetworkImage(
+                                                      'https://docs.flutter.dev/assets/images/dash/dash-fainting.gif'),
                                                   fit: BoxFit.cover,
                                                 ),
                                                 borderRadius: BorderRadius.only(
-                                                  topLeft: Radius.circular(16.0),
-                                                  topRight: Radius.circular(16.0),
+                                                  topLeft:
+                                                      Radius.circular(16.0),
+                                                  topRight:
+                                                      Radius.circular(16.0),
                                                 ),
                                               ),
                                             ),
-                                            const Text('Metais', textAlign: TextAlign.center),
+                                            const Text('Metais',
+                                                textAlign: TextAlign.center),
                                           ],
                                         ),
                                         content: const Text(
                                             'Metais são elementos que conduzem bem a eletricidade e o calor, geralmente maleáveis e com alta densidade.'),
                                         actions: [
                                           TextButton(
-                                            onPressed: () => Navigator.pop(context),
+                                            onPressed: () =>
+                                                Navigator.pop(context),
                                             child: const Text('Fechar'),
                                           ),
                                         ],
@@ -167,7 +173,8 @@ class HomeScreen extends StatelessWidget {
                                     builder: (BuildContext context) {
                                       return AlertDialog(
                                         titlePadding: EdgeInsets.zero,
-                                        contentPadding: const EdgeInsets.all(16.0),
+                                        contentPadding:
+                                            const EdgeInsets.all(16.0),
                                         title: Column(
                                           children: [
                                             Container(
@@ -175,23 +182,28 @@ class HomeScreen extends StatelessWidget {
                                               height: 150,
                                               decoration: const BoxDecoration(
                                                 image: DecorationImage(
-                                                  image: NetworkImage('https://docs.flutter.dev/assets/images/dash/dash-fainting.gif'),
+                                                  image: NetworkImage(
+                                                      'https://docs.flutter.dev/assets/images/dash/dash-fainting.gif'),
                                                   fit: BoxFit.cover,
                                                 ),
                                                 borderRadius: BorderRadius.only(
-                                                  topLeft: Radius.circular(16.0),
-                                                  topRight: Radius.circular(16.0),
+                                                  topLeft:
+                                                      Radius.circular(16.0),
+                                                  topRight:
+                                                      Radius.circular(16.0),
                                                 ),
                                               ),
                                             ),
-                                            const Text('Semimetais', textAlign: TextAlign.center),
+                                            const Text('Semimetais',
+                                                textAlign: TextAlign.center),
                                           ],
                                         ),
                                         content: const Text(
                                             'Semimetais possuem propriedades intermediárias entre metais e não-metais, sendo bons semicondutores.'),
                                         actions: [
                                           TextButton(
-                                            onPressed: () => Navigator.pop(context),
+                                            onPressed: () =>
+                                                Navigator.pop(context),
                                             child: const Text('Fechar'),
                                           ),
                                         ],
@@ -225,7 +237,8 @@ class HomeScreen extends StatelessWidget {
                                     builder: (BuildContext context) {
                                       return AlertDialog(
                                         titlePadding: EdgeInsets.zero,
-                                        contentPadding: const EdgeInsets.all(16.0),
+                                        contentPadding:
+                                            const EdgeInsets.all(16.0),
                                         title: Column(
                                           children: [
                                             Container(
@@ -233,23 +246,28 @@ class HomeScreen extends StatelessWidget {
                                               height: 150,
                                               decoration: const BoxDecoration(
                                                 image: DecorationImage(
-                                                  image: NetworkImage('https://docs.flutter.dev/assets/images/dash/dash-fainting.gif'),
+                                                  image: NetworkImage(
+                                                      'https://docs.flutter.dev/assets/images/dash/dash-fainting.gif'),
                                                   fit: BoxFit.cover,
                                                 ),
                                                 borderRadius: BorderRadius.only(
-                                                  topLeft: Radius.circular(16.0),
-                                                  topRight: Radius.circular(16.0),
+                                                  topLeft:
+                                                      Radius.circular(16.0),
+                                                  topRight:
+                                                      Radius.circular(16.0),
                                                 ),
                                               ),
                                             ),
-                                            const Text('Não-metais', textAlign: TextAlign.center),
+                                            const Text('Não-metais',
+                                                textAlign: TextAlign.center),
                                           ],
                                         ),
                                         content: const Text(
                                             'Não-metais são elementos que geralmente não conduzem eletricidade e têm baixa densidade.'),
                                         actions: [
                                           TextButton(
-                                            onPressed: () => Navigator.pop(context),
+                                            onPressed: () =>
+                                                Navigator.pop(context),
                                             child: const Text('Fechar'),
                                           ),
                                         ],

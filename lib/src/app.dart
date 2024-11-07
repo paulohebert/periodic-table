@@ -35,8 +35,12 @@ class PeriodicTableApp extends StatelessWidget {
                     case SettingsScreen.routeName:
                       return SettingsScreen(controller: settingsController);
                     case ElementDetailsScreen.routeName:
+                      final args =
+                          routeSettings.arguments as Map<String, String>;
                       return ElementDetailsScreen(
-                          name: routeSettings.arguments as String);
+                        name: args['name'] ?? '',
+                        symbol: args['symbol'] ?? '',
+                      );
                     case HomeScreen.routeName:
                     default:
                       return const HomeScreen();

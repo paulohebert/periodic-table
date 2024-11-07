@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 
 class ElementDetailsScreen extends StatelessWidget {
-  const ElementDetailsScreen({super.key, required this.name});
+  const ElementDetailsScreen(
+      {super.key, required this.name, required this.symbol});
 
   static const routeName = '/element_details';
 
   final String name;
+  final String symbol;
 
   @override
   Widget build(BuildContext context) {
@@ -28,12 +30,12 @@ class ElementDetailsScreen extends StatelessWidget {
           child: Text(name),
         ),
       ),
-      body: const Padding(
-        padding: EdgeInsets.all(16),
+      body: Padding(
+        padding: const EdgeInsets.all(16),
         child: Row(children: [
           Padding(
-            padding: EdgeInsets.only(right: 14.0),
-            child: Text("DESCRIÇÃO"),
+            padding: const EdgeInsets.only(right: 14.0),
+            child: Text("Símbolo: $symbol"),
           ),
         ]),
       ),

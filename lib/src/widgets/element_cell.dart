@@ -16,7 +16,10 @@ class ElementCell extends StatelessWidget {
         colors: colors[element.category] ?? [],
         onTap: () {
           Navigator.restorablePushNamed(context, ElementDetailsScreen.routeName,
-              arguments: element.name);
+              arguments: {
+                'name': element.name,
+                'symbol': element.symbol,
+              });
         },
         child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 10),
