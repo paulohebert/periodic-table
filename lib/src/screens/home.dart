@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:rive/rive.dart' as rive;
 
 import '../widgets/about.dart';
@@ -60,7 +61,7 @@ class HomeScreen extends StatelessWidget {
             ),
             builder: (BuildContext context) {
               return SizedBox(
-                height: 240,
+                height: 280,
                 child: Column(
                   children: <Widget>[
                     Container(
@@ -88,44 +89,178 @@ class HomeScreen extends StatelessWidget {
                       child: Column(
                         children: [
                           Row(
-                            mainAxisAlignment: MainAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Container(
-                                width: 20.0,
-                                height: 20.0,
-                                color: const Color(0xFF4BD169),
+                              Row(
+                                children: [
+                                  Container(
+                                    width: 20.0,
+                                    height: 20.0,
+                                    color: const Color(0xFF4BD169),
+                                  ),
+                                  const SizedBox(width: 8.0),
+                                  const Text('Metais'),
+                                ],
                               ),
-                              const SizedBox(width: 8.0),
-                              const Text('Metais'),
+                              IconButton(
+                                icon: const Icon(Icons.info_outline, size: 20),
+                                onPressed: () {
+                                  showDialog(
+                                    context: context,
+                                    builder: (BuildContext context) {
+                                      return AlertDialog(
+                                        titlePadding: EdgeInsets.zero,
+                                        contentPadding: const EdgeInsets.all(16.0),
+                                        title: Column(
+                                          children: [
+                                            Container(
+                                              width: double.infinity,
+                                              height: 150,
+                                              decoration: const BoxDecoration(
+                                                image: DecorationImage(
+                                                  image: NetworkImage('https://docs.flutter.dev/assets/images/dash/dash-fainting.gif'),
+                                                  fit: BoxFit.cover,
+                                                ),
+                                                borderRadius: BorderRadius.only(
+                                                  topLeft: Radius.circular(16.0),
+                                                  topRight: Radius.circular(16.0),
+                                                ),
+                                              ),
+                                            ),
+                                            const Text('Metais', textAlign: TextAlign.center),
+                                          ],
+                                        ),
+                                        content: const Text(
+                                            'Metais são elementos que conduzem bem a eletricidade e o calor, geralmente maleáveis e com alta densidade.'),
+                                        actions: [
+                                          TextButton(
+                                            onPressed: () => Navigator.pop(context),
+                                            child: const Text('Fechar'),
+                                          ),
+                                        ],
+                                      );
+                                    },
+                                  );
+                                },
+                              ),
                             ],
                           ),
-                          const SizedBox(height: 8.0),
+                          const SizedBox(height: 1.0),
                           Row(
-                            mainAxisAlignment: MainAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Container(
-                                width: 20.0,
-                                height: 20.0,
-                                color: const Color(0xFFF0B214),
+                              Row(
+                                children: [
+                                  Container(
+                                    width: 20.0,
+                                    height: 20.0,
+                                    color: const Color(0xFFF0B214),
+                                  ),
+                                  const SizedBox(width: 8.0),
+                                  const Text('Semimetais'),
+                                ],
                               ),
-                              const SizedBox(width: 8.0),
-                              const Text('Semimetais'),
+                              IconButton(
+                                icon: const Icon(Icons.info_outline, size: 20),
+                                onPressed: () {
+                                  showDialog(
+                                    context: context,
+                                    builder: (BuildContext context) {
+                                      return AlertDialog(
+                                        titlePadding: EdgeInsets.zero,
+                                        contentPadding: const EdgeInsets.all(16.0),
+                                        title: Column(
+                                          children: [
+                                            Container(
+                                              width: double.infinity,
+                                              height: 150,
+                                              decoration: const BoxDecoration(
+                                                image: DecorationImage(
+                                                  image: NetworkImage('https://docs.flutter.dev/assets/images/dash/dash-fainting.gif'),
+                                                  fit: BoxFit.cover,
+                                                ),
+                                                borderRadius: BorderRadius.only(
+                                                  topLeft: Radius.circular(16.0),
+                                                  topRight: Radius.circular(16.0),
+                                                ),
+                                              ),
+                                            ),
+                                            const Text('Semimetais', textAlign: TextAlign.center),
+                                          ],
+                                        ),
+                                        content: const Text(
+                                            'Semimetais possuem propriedades intermediárias entre metais e não-metais, sendo bons semicondutores.'),
+                                        actions: [
+                                          TextButton(
+                                            onPressed: () => Navigator.pop(context),
+                                            child: const Text('Fechar'),
+                                          ),
+                                        ],
+                                      );
+                                    },
+                                  );
+                                },
+                              ),
                             ],
                           ),
-                          const SizedBox(height: 8.0),
+                          const SizedBox(height: 1.0),
                           Row(
-                            mainAxisAlignment: MainAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Container(
-                                width: 20.0,
-                                height: 20.0,
-                                color: const Color(0xFFF07014),
+                              Row(
+                                children: [
+                                  Container(
+                                    width: 20.0,
+                                    height: 20.0,
+                                    color: const Color(0xFFF07014),
+                                  ),
+                                  const SizedBox(width: 8.0),
+                                  const Text('Não-metais'),
+                                ],
                               ),
-                              const SizedBox(width: 8.0),
-                              const Text('Não-metais'),
+                              IconButton(
+                                icon: const Icon(Icons.info_outline, size: 20),
+                                onPressed: () {
+                                  showDialog(
+                                    context: context,
+                                    builder: (BuildContext context) {
+                                      return AlertDialog(
+                                        titlePadding: EdgeInsets.zero,
+                                        contentPadding: const EdgeInsets.all(16.0),
+                                        title: Column(
+                                          children: [
+                                            Container(
+                                              width: double.infinity,
+                                              height: 150,
+                                              decoration: const BoxDecoration(
+                                                image: DecorationImage(
+                                                  image: NetworkImage('https://docs.flutter.dev/assets/images/dash/dash-fainting.gif'),
+                                                  fit: BoxFit.cover,
+                                                ),
+                                                borderRadius: BorderRadius.only(
+                                                  topLeft: Radius.circular(16.0),
+                                                  topRight: Radius.circular(16.0),
+                                                ),
+                                              ),
+                                            ),
+                                            const Text('Não-metais', textAlign: TextAlign.center),
+                                          ],
+                                        ),
+                                        content: const Text(
+                                            'Não-metais são elementos que geralmente não conduzem eletricidade e têm baixa densidade.'),
+                                        actions: [
+                                          TextButton(
+                                            onPressed: () => Navigator.pop(context),
+                                            child: const Text('Fechar'),
+                                          ),
+                                        ],
+                                      );
+                                    },
+                                  );
+                                },
+                              ),
                             ],
                           ),
-                          const SizedBox(height: 16.0),
                         ],
                       ),
                     ),
