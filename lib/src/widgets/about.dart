@@ -99,7 +99,7 @@ class About extends StatelessWidget {
                                   crossAxisAlignment: WrapCrossAlignment.center,
                                   children: [
                                     Text('Ricardo Argenton Ramos'),
-                                    Text('Maria de Fátima'),
+                                    Text('Maria de Fátima Souza Silva'),
                                   ],
                                 ))
                           ])))
