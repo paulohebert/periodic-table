@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../models/element_details.dart';
+import '../widgets/element_info.dart';
 
 class ElementDetailsScreen extends StatelessWidget {
   const ElementDetailsScreen(
@@ -43,19 +44,7 @@ class ElementDetailsScreen extends StatelessWidget {
               } else if (!snapshot.hasData) {
                 return const Center(child: Text('Nenhum dado encontrado'));
               } else {
-                final data = snapshot.data!;
-                return Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: 30, vertical: 20),
-                        child: Text(
-                          "Descrição: ${data.summary}",
-                          softWrap: true,
-                        ),
-                      ),
-                    ]);
+                return ElementInfo(data: snapshot.data!);
               }
             }));
   }

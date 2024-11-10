@@ -3,6 +3,7 @@
   <head>
     <base href="$FLUTTER_BASE_HREF" />
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
     <meta name="description" content="Tabela Periódica Interativa" />
     <meta name="mobile-web-app-capable" content="yes" />
@@ -30,6 +31,20 @@
         color: darkslategray;
         font-size: 1.25rem;
         margin-top: 0.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .rotating {
+        animation: rotation 5s linear infinite;
       }
 
       @media (prefers-color-scheme: dark) {
@@ -45,7 +60,7 @@
     </style>
   </head>
   <body>
-    <picture id="splash-branding">
+    <picture id="splash-branding" class="rotating">
       <source
         srcset="
           splash/img/branding-1x.png 1x,
@@ -68,6 +83,7 @@
     </picture>
     <p id="loading"></p>
     <script src="flutter_bootstrap.js" async></script>
+    <script type="module" src="./assets/packages/model_viewer_plus/assets/model-viewer.min.js" defer></script>
     <script
       defer
       src="https://static.cloudflareinsights.com/beacon.min.js"
