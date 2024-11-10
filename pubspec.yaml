@@ -1,5 +1,5 @@
 name: periodic_table
-description: "A new Flutter project."
+description: 'Tabela Periódica Interativa'
 
 # Prevent accidental publishing to pub.dev.
 publish_to: 'none'
@@ -15,6 +15,7 @@ dependencies:
   flutter_layout_grid: ^2.0.7
   flutter_native_splash: ^2.4.2
   flutter_svg: ^2.0.10+1
+  model_viewer_plus: ^1.9.0
   rive: ^0.13.13
   shared_preferences: ^2.3.2
 
@@ -30,3 +31,4 @@ flutter:
     # Add assets from the images directory to the application.
     - assets/images/
     - assets/json/
+    - assets/model3d/
