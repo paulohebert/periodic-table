@@ -118,8 +118,8 @@ class HomeScreen extends StatelessWidget {
                                               height: 150,
                                               decoration: const BoxDecoration(
                                                 image: DecorationImage(
-                                                  image: NetworkImage(
-                                                      'https://docs.flutter.dev/assets/images/dash/dash-fainting.gif'),
+                                                  image: AssetImage(
+                                                      'assets/images/metais.webp'),
                                                   fit: BoxFit.cover,
                                                 ),
                                                 borderRadius: BorderRadius.only(
@@ -135,7 +135,7 @@ class HomeScreen extends StatelessWidget {
                                           ],
                                         ),
                                         content: const Text(
-                                            'Metais são elementos que conduzem bem a eletricidade e o calor, geralmente maleáveis e com alta densidade.'),
+                                            'Os metais na Tabela Periódica formam a maior parte dos elementos e são conhecidos por sua condutividade elétrica e térmica, brilho metálico e maleabilidade. Eles têm baixa afinidade eletrônica, ou seja, tendem a perder elétrons em vez de ganhá-los, formando cátions e se ligando facilmente a elementos de alta eletronegatividade, como os não metais (especialmente halogênios e oxigênio).\nO ouro (Au) é um exemplo de metal nobre conhecido por sua alta resistência à corrosão e excelente condutividade elétrica.', textAlign: TextAlign.justify),
                                         actions: [
                                           TextButton(
                                             onPressed: () =>
@@ -182,8 +182,8 @@ class HomeScreen extends StatelessWidget {
                                               height: 150,
                                               decoration: const BoxDecoration(
                                                 image: DecorationImage(
-                                                  image: NetworkImage(
-                                                      'https://docs.flutter.dev/assets/images/dash/dash-fainting.gif'),
+                                                  image: AssetImage(
+                                                      'assets/images/semimetais.gif'),
                                                   fit: BoxFit.cover,
                                                 ),
                                                 borderRadius: BorderRadius.only(
@@ -199,7 +199,7 @@ class HomeScreen extends StatelessWidget {
                                           ],
                                         ),
                                         content: const Text(
-                                            'Semimetais possuem propriedades intermediárias entre metais e não-metais, sendo bons semicondutores.'),
+                                            'Os semimetais (ou metaloides) são elementos localizados em uma região de transição entre os metais e os não metais na Tabela Periódica. Eles possuem afinidade eletrônica variável, mas geralmente formam ligações mais facilmente com elementos não metálicos, como os halogênios e o oxigênio, devido à sua capacidade de compartilhar ou aceitar elétrons para completar seus orbitais. \nO boro (B) é um exemplo de semimetal amplamente utilizado em materiais resistentes ao calor, como os vidros de borossilicato, frequentemente empregados na fabricação de béqueres para a realização de experimentos em laboratório.', textAlign: TextAlign.justify),
                                         actions: [
                                           TextButton(
                                             onPressed: () =>
@@ -246,8 +246,8 @@ class HomeScreen extends StatelessWidget {
                                               height: 150,
                                               decoration: const BoxDecoration(
                                                 image: DecorationImage(
-                                                  image: NetworkImage(
-                                                      'https://docs.flutter.dev/assets/images/dash/dash-fainting.gif'),
+                                                  image: AssetImage(
+                                                      'assets/images/naometais.gif'),
                                                   fit: BoxFit.cover,
                                                 ),
                                                 borderRadius: BorderRadius.only(
@@ -263,7 +263,7 @@ class HomeScreen extends StatelessWidget {
                                           ],
                                         ),
                                         content: const Text(
-                                            'Não-metais são elementos que geralmente não conduzem eletricidade e têm baixa densidade.'),
+                                            'Os Não-metais são elementos caracterizados por não conduzirem eletricidade, serem isolantes térmicos e, em muitos casos, existirem em estado gasoso. Eles possuem alta afinidade eletrônica, o que significa que tendem a ganhar elétrons em reações químicas, formando ligações covalentes com outros não metais. A afinidade eletrônica é mais alta com elementos que compartilham características semelhantes, como outros não metais. \nO diamante, especificamente, é formado quando o carbono (C) é submetido a condições extremas de alta pressão e alta temperatura, que ocorrem naturalmente nas profundezas da crosta terrestre, a mais de 150 km de profundidade.', textAlign: TextAlign.justify),
                                         actions: [
                                           TextButton(
                                             onPressed: () =>
