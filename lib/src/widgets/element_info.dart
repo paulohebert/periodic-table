@@ -10,7 +10,8 @@ class ElementInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final bool isDarkTheme = Theme.of(context).brightness == Brightness.dark;
-    return Column(crossAxisAlignment: CrossAxisAlignment.center, children: [
+    return SingleChildScrollView(
+        child: Column(crossAxisAlignment: CrossAxisAlignment.center, children: [
       Padding(
         padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
         child: Text(
@@ -18,19 +19,21 @@ class ElementInfo extends StatelessWidget {
           softWrap: true,
         ),
       ),
-      Expanded(
+      SizedBox(
+          width: MediaQuery.sizeOf(context).width,
+          height: MediaQuery.sizeOf(context).height,
           child: ModelViewer(
-        backgroundColor:
-            isDarkTheme ? const Color(0xFF303030) : const Color(0xFFEEEEEE),
-        src: 'assets/assets/model3d/${data.symbol}.glb',
-        alt: 'Átomo de ${data.name}',
-        ar: true,
-        autoRotate: true,
-        shadowIntensity: 1,
-        autoPlay: true,
-        disableZoom: true,
-        debugLogging: false,
-      ))
-    ]);
+            backgroundColor:
+                isDarkTheme ? const Color(0xFF303030) : const Color(0xFFEEEEEE),
+            src: 'assets/assets/model3d/${data.symbol}.glb',
+            alt: 'Átomo de ${data.name}',
+            ar: true,
+            autoRotate: true,
+            shadowIntensity: 1,
+            autoPlay: true,
+            disableZoom: true,
+            debugLogging: false,
+          ))
+    ]));
   }
 }
