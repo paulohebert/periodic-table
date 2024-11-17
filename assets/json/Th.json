@@ -1,0 +1,52 @@
+{
+    "name": "Thorium",
+    "appearance": "silvery, often with black tarnish",
+    "atomic_mass": 232.03774,
+    "boil": 5061,
+    "category": "actinide",
+    "density": 11.724,
+    "discovered_by": "Jöns Jakob Berzelius",
+    "melt": 2023,
+    "molar_heat": 26.23,
+    "named_by": "",
+    "number": 90,
+    "period": 7,
+    "group": 3,
+    "phase": "Solid",
+    "source": "https://en.wikipedia.org/wiki/Thorium",
+    "bohr_model_image": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_090_thorium/element_090_thorium_srp_th.png",
+    "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_090_thorium/element_090_thorium.glb",
+    "spectral_img": "",
+    "summary":  "Tório é um elemento químico com símbolo Th e número atômico 90. Um metal actinídeo radioativo, o tório é um dos dois únicos elementos significativamente radioativos que ainda ocorrem naturalmente em grandes quantidades como um elemento primordial (o outro é o urânio). Foi descoberto em 1828 pelo reverendo norueguês e mineralogista amador Morten Thrane Esmark e identificado pelo químico sueco Jöns Jakob Berzelius, que o nomeou em homenagem a Thor, o deus nórdico do trovão.",
+    "symbol": "Th",
+    "xpos": 4,
+    "ypos": 10,
+    "wxpos": 4,
+    "wypos": 7,
+    "shells": [
+        2,
+        8,
+        18,
+        32,
+        18,
+        10,
+        2
+    ],
+    "electron_configuration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 6d2",
+    "electron_configuration_semantic": "[Rn] 6d2 7s2",
+    "electron_affinity": 112.72,
+    "electronegativity_pauling": 1.3,
+    "ionization_energies": [
+        587,
+        1110,
+        1930,
+        2780
+    ],
+    "cpk-hex": "00baff",
+    "image": {
+        "title": "Thorium Metal in Ampoule, corroded",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Thorium-1.jpg",
+        "attribution": "W. Oelen, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons"
+    },
+    "block": "f"
+}

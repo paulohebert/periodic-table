@@ -1,0 +1,49 @@
+{
+    "name": "Iodine",
+    "appearance": "lustrous metallic gray, violet as a gas",
+    "atomic_mass": 126.904473,
+    "boil": 457.4,
+    "category": "diatomic nonmetal",
+    "density": 4.933,
+    "discovered_by": "Bernard Courtois",
+    "melt": 386.85,
+    "molar_heat": 0.0,
+    "named_by": "",
+    "number": 53,
+    "period": 5,
+    "group": 17,
+    "phase": "Solid",
+    "source": "https://en.wikipedia.org/wiki/Iodine",
+    "bohr_model_image": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_053_iodine/element_053_iodine_srp_th.png",
+    "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_053_iodine/element_053_iodine.glb",
+    "spectral_img": "",
+    "summary": "Iodo é um elemento químico com símbolo I e número atômico 53. O nome vem do grego ἰοειδής ioeidēs, que significa violeta ou roxo, devido à cor do vapor de iodo. Iodo e seus compostos são usados ​​principalmente em nutrição e industrialmente na produção de ácido acético e certos polímeros.",
+    "symbol": "I",
+    "xpos": 17,
+    "ypos": 5,
+    "wxpos": 31,
+    "wypos": 5,
+    "shells": [
+        2,
+        8,
+        18,
+        18,
+        7
+    ],
+    "electron_configuration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p5",
+    "electron_configuration_semantic": "[Kr] 4d10 5s2 5p5",
+    "electron_affinity": 295.1531,
+    "electronegativity_pauling": 2.66,
+    "ionization_energies": [
+        1008.4,
+        1845.9,
+        3180
+    ],
+    "cpk-hex": "940094",
+    "image": {
+        "title": "Iodine Sample",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Iodine-sample.jpg",
+        "attribution": "Benjah-bmm27, Public domain, via Wikimedia Commons"
+    },
+    "block": "p"
+}

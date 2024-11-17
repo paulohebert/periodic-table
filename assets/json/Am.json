@@ -1,0 +1,49 @@
+{
+    "name": "Americium",
+    "appearance": "silvery white",
+    "atomic_mass": 243,
+    "boil": 2880,
+    "category": "actinide",
+    "density": 12,
+    "discovered_by": "Glenn T. Seaborg",
+    "melt": 1449,
+    "molar_heat": 62.7,
+    "named_by": "",
+    "number": 95,
+    "period": 7,
+    "group": 3,
+    "phase": "Solid",
+    "source": "https://en.wikipedia.org/wiki/Americium",
+    "bohr_model_image": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_095_americium/element_095_americium_srp_th.png",
+    "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_095_americium/element_095_americium.glb",
+    "spectral_img": "https://en.wikipedia.org/wiki/File:Americium_spectrum_visible.png",
+    "summary": "Amerício é um elemento químico transurânico radioativo com símbolo Am e número atômico 95. Este membro da série dos actinídeos está localizado na tabela periódica sob o elemento lantanídeo európio e, portanto, por analogia, recebeu o nome das Américas. O amerício foi produzido pela primeira vez em 1944 pelo grupo de Glenn T. Seaborg de Berkeley, Califórnia, no laboratório metalúrgico da Universidade de Chicago.",
+    "symbol": "Am",
+    "xpos": 9,
+    "ypos": 10,
+    "wxpos": 9,
+    "wypos": 7,
+    "shells": [
+        2,
+        8,
+        18,
+        32,
+        25,
+        8,
+        2
+    ],
+    "electron_configuration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f7",
+    "electron_configuration_semantic": "[Rn] 5f7 7s2",
+    "electron_affinity": 9.93,
+    "electronegativity_pauling": 1.13,
+    "ionization_energies": [
+        578
+    ],
+    "cpk-hex": "545cf2",
+    "image": {
+        "title": "A small disc of Am-241 under the microscope.",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Americium_microscope.jpg",
+        "attribution": "Bionerd, CC BY 3.0 <https://creativecommons.org/licenses/by/3.0>, via Wikimedia Commons"
+    },
+    "block": "f"
+}
