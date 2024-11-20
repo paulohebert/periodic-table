@@ -12,7 +12,7 @@
     "number": 23,
     "period": 4,
     "group": 5,
-    "phase": "Solid",
+    "phase": "Sólido",
     "source": "https://en.wikipedia.org/wiki/Vanadium",
     "bohr_model_image": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_023_vanadium/element_023_vanadium_srp_th.png",
     "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_023_vanadium/element_023_vanadium.glb",
@@ -63,5 +63,8 @@
         "title": "Pieces of Pure Vanadium with Oxide Layer",
         "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Vanadium-pieces.jpg",
         "attribution": "Jurii, CC BY 3.0 <https://creativecommons.org/licenses/by/3.0>, via Wikimedia Commons, source: https://images-of-elements.com/vanadium.php"
-    }
+    },
+    "block": "d"
+
 }
+

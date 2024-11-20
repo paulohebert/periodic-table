@@ -16,7 +16,7 @@ class ElementInfo extends StatelessWidget {
       Padding(
         padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
         child: Text(
-          "Descrição: ${data.summary}",
+          "Descrição:\n Massa Atômica: ${data.atomicMass}  \n Densidade: ${data.density} \n Número Atômico: ${data.number} \n Grupo: ${data.group} \n Período: ${data.period} \n Estado: ${data.phase} \n Ponto de Ebulição: ${data.boil} \n Ponto de Fusão: ${data.melt}",
           softWrap: true,
         ),
       ),

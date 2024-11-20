@@ -40,7 +40,7 @@ class ElementDetailsScreen extends StatelessWidget {
               if (snapshot.connectionState == ConnectionState.waiting) {
                 return const Center(child: CircularProgressIndicator());
               } else if (snapshot.hasError) {
-                return const Center(child: Text('Erro ao carregar os dados'));
+                return  Center(child: Text('${snapshot.error}'));
               } else if (!snapshot.hasData) {
                 return const Center(child: Text('Nenhum dado encontrado'));
               } else {
@@ -54,5 +54,5 @@ class ElementDetailsScreen extends StatelessWidget {
         await rootBundle.loadString('assets/json/$symbol.json');
     final Map<String, dynamic> data = json.decode(response);
     return ChemicalElementDetails.fromJson(data);
-  }
+}
 }

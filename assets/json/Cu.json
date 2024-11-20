@@ -12,7 +12,7 @@
     "number": 29,
     "period": 4,
     "group": 11,
-    "phase": "Solid",
+    "phase": "Sólido",
     "source": "https://en.wikipedia.org/wiki/Copper",
     "bohr_model_image": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_029_copper/element_029_copper_srp_th.png",
     "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_029_copper/element_029_copper.glb",
@@ -69,5 +69,7 @@
         "title": "Macro of Native Copper about 1 ½ inches (4 cm) in size",
         "url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/NatCopper.jpg",
         "attribution": "Native_Copper_Macro_Digon3.jpg: 'Jonathan Zander (Digon3)' derivative work: Materialscientist, CC BY-SA 2.5 <https://creativecommons.org/licenses/by-sa/2.5>, via Wikimedia Commons"
-    }
+    },
+    "block": "d"
+
 }

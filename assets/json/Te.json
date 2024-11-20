@@ -1,6 +1,6 @@
 {
     "name": "Tellurium",
-    "appearance": null,
+    "appearance": "",
     "atomic_mass": 127.603,
     "boil": 1261,
     "category": "metalloid",
@@ -12,7 +12,7 @@
     "number": 52,
     "period": 5,
     "group": 16,
-    "phase": "Solid",
+    "phase": "Sólido",
     "source": "https://en.wikipedia.org/wiki/Tellurium",
     "bohr_model_image": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_052_tellurium/element_052_tellurium_srp_th.png",
     "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_052_tellurium/element_052_tellurium.glb",

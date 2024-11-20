@@ -12,7 +12,7 @@
     "number": 5,
     "period": 2,
     "group": 13,
-    "phase": "Solid",
+    "phase": "Sólido",
     "source": "https://en.wikipedia.org/wiki/Boron",
     "bohr_model_image": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_005_boron/element_005_boron_srp_th.png",
     "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_005_boron/element_005_boron.glb",
@@ -43,5 +43,6 @@
         "title": "Pure Crystalline Boron, front and back side. Original size in cm: 2 x 3",
         "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Boron.jpg",
         "attribution": "Jurii, CC BY 3.0 <https://creativecommons.org/licenses/by/3.0>, via Wikimedia Commons, source: https://images-of-elements.com/boron.php"
-    }
+    },
+    "block": "p"
 }
